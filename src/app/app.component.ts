@@ -8,7 +8,7 @@ import * as d3 from 'd3';
 })
 export class AppComponent {
   title = 'ng-d3-graph-editor';
-  @ViewChild('graphContainer') graphContainer: ElementRef;
+  @ViewChild('graphContainer', { static: true }) graphContainer: ElementRef;
 
   width = 960;
   height = 600;
